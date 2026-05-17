@@ -1,0 +1,39 @@
+.car-detail-hero {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.car-detail-summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.car-detail-stat {
+    padding: 1rem;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.74);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.06);
+}
+
+.car-detail-stat-label {
+    display: block;
+    color: #64748b;
+    font-size: 0.85rem;
+    margin-bottom: 0.35rem;
+}
+
+.car-detail-stat-value {
+    color: #0f172a;
+    font-size: 1.05rem;
+    font-weight: 700;
+}
+
+.detail-tags {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}

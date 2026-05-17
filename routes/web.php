@@ -1,24 +1,21 @@
 <?php
 
+use App\Http\Controllers\CarController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
 })->name('home');
 
-Route::get('/cars', function () {
-    return view('cars');
-})->name('cars');
+Route::get('/cars', [CarController::class, 'index'])->name('cars');
+Route::get('/cars/{car}', [CarController::class, 'show'])->name('cars.show');
 
-Route::get('/my-listings', function () {
-    return view('my-listings');
-})->name('my-listings');
+// Protected routes for car listings
+Route::middleware(['auth'])->group(function () {
+    Route::get('/my-listings', [CarController::class, 'myListings'])->name('my-listings');
+    Route::get('/create-listing', [CarController::class, 'create'])->name('create-listing');
+    Route::post('/verify-license-plate', [CarController::class, 'verifyLicensePlate'])->name('verify-license-plate');
+    Route::post('/listings', [CarController::class, 'store'])->name('listings.store');
+    Route::delete('/listings/{car}', [CarController::class, 'destroy'])->name('listings.destroy');
+});
 
-Route::get('/create-listing', function () {
-    return view('create-listing');
-})->name('create-listing');
-
-Route::post('/listings', function () {
-    // Handle form submission here
-    return redirect()->route('my-listings');
-})->name('listings.store');

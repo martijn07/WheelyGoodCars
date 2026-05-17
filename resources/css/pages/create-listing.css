@@ -1,0 +1,278 @@
+.license-plate-stage {
+    min-height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.step-title {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.step-progress {
+    max-width: 980px;
+    margin: 0 auto 2rem;
+}
+
+.step-progress-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    color: #334155;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.step-progress-track {
+    height: 12px;
+    border-radius: 999px;
+    background: #e2e8f0;
+    overflow: hidden;
+}
+
+.step-progress-fill {
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #2563eb 0%, #0f766e 100%);
+    transition: width 180ms ease-out;
+}
+
+.step-progress-step-1 .step-progress-fill {
+    width: 50%;
+}
+
+.step-progress-step-2 .step-progress-fill {
+    width: 100%;
+}
+
+.uppercase-input {
+    text-transform: uppercase;
+}
+
+.license-plate-field {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    max-width: 980px;
+    width: 100%;
+    border: 3px solid #101010;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(180deg, #f7c81a 0%, #dca407 100%);
+    box-shadow: 0 16px 28px rgba(17, 24, 39, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+}
+
+.license-country-strip {
+    min-width: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, #2563eb 0%, #1d4ed8 100%);
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    font-size: 1.05rem;
+    border-right: 2px solid rgba(0, 0, 0, 0.25);
+}
+
+.license-plate-input {
+    border: 0;
+    background: transparent;
+    text-align: center;
+    font-size: 4.8rem;
+    font-weight: 800;
+    letter-spacing: 0.2em;
+    color: #0f172a;
+    padding: 1.15rem 1.4rem;
+    font-family: "Arial Black", "Segoe UI", sans-serif;
+}
+
+.license-plate-input::placeholder {
+    color: rgba(17, 24, 39, 0.55);
+    letter-spacing: 0.08em;
+}
+
+.license-plate-input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.plate-next-btn {
+    margin-top: 1.5rem;
+    min-width: 240px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-secondary {
+    background-color: #6b7280;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-secondary:hover {
+    background-color: #4b5563;
+}
+
+.kenteken-info {
+    padding: 1rem;
+    background-color: #f0f9ff;
+    border: 1px solid #bfdbfe;
+    margin-bottom: 1.5rem;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.tag-group {
+    margin-top: 1.5rem;
+}
+
+.tag-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.tag-option {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.15rem;
+}
+
+.tag-option input {
+    width: auto;
+}
+
+.tag-pill {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 0.45rem 0.8rem;
+    background: #eef2ff;
+    color: #1e3a8a;
+    border: 1px solid #c7d2fe;
+    font-size: 0.92rem;
+    font-weight: 600;
+}
+
+.tone-2 .tag-pill {
+    background: #ecfeff;
+    color: #155e75;
+    border-color: #a5f3fc;
+}
+
+.tone-3 .tag-pill {
+    background: #f5f3ff;
+    color: #6b21a8;
+    border-color: #ddd6fe;
+}
+
+.tone-4 .tag-pill {
+    background: #f0fdf4;
+    color: #166534;
+    border-color: #bbf7d0;
+}
+
+.tone-5 .tag-pill {
+    background: #fff7ed;
+    color: #9a3412;
+    border-color: #fed7aa;
+}
+
+.tone-6 .tag-pill {
+    background: #fef2f2;
+    color: #991b1b;
+    border-color: #fecaca;
+}
+
+.empty-tags-state {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.btn-grow {
+    flex: 1;
+}
+
+@media (max-width: 640px) {
+    .license-plate-stage {
+        min-height: 360px;
+    }
+
+    .license-plate-input {
+        font-size: 2.45rem;
+        letter-spacing: 0.11em;
+    }
+
+    .license-country-strip {
+        min-width: 64px;
+        font-size: 0.8rem;
+    }
+
+    .tag-grid {
+        gap: 0.5rem;
+    }
+}

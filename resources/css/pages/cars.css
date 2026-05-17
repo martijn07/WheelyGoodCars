@@ -1,0 +1,140 @@
+.cars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.cars-empty-card {
+    padding: 2rem;
+    border: 1px dashed rgba(15, 23, 42, 0.18);
+    border-radius: 20px;
+    text-align: center;
+    color: #5b6475;
+    background: rgba(255, 255, 255, 0.72);
+}
+
+.cars-empty-title {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.cars-empty-subtitle {
+    font-size: 0.875rem;
+}
+
+.car-card {
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(248,248,250,0.88));
+    padding: 1rem;
+    border-radius: 22px;
+    box-shadow: 0 18px 35px rgba(15, 23, 42, 0.08);
+}
+
+.car-card-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.car-card-featured {
+    transform: scale(1.03);
+    border-color: rgba(18, 70, 194, 0.35);
+    box-shadow: 0 18px 38px rgba(18, 70, 194, 0.16);
+}
+
+.car-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.car-title {
+    font-size: 1.05rem;
+    color: #0f172a;
+}
+
+.car-price {
+    font-weight: 700;
+    color: #0f766e;
+    white-space: nowrap;
+}
+
+.car-plate {
+    display: inline-block;
+    background: linear-gradient(180deg, #f7c81a 0%, #dca407 100%);
+    border: 2px solid #111827;
+    border-radius: 6px;
+    font-family: "Arial Black", "Segoe UI", sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    color: #111827;
+    padding: 0.25rem 0.6rem;
+    margin-bottom: 0.75rem;
+}
+
+.car-meta-list {
+    list-style: none;
+    display: grid;
+    gap: 0.35rem;
+    color: #4b5563;
+    font-size: 0.92rem;
+}
+
+.car-detail-link {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #2563eb;
+    font-weight: 700;
+}
+
+.car-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.car-tag {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 0.35rem 0.65rem;
+    background: #eef2ff;
+    color: #1e3a8a;
+    border: 1px solid #c7d2fe;
+    font-size: 0.82rem;
+    font-weight: 600;
+}
+
+.car-tag.tone-2 {
+    background: #ecfeff;
+    color: #155e75;
+    border-color: #a5f3fc;
+}
+
+.car-tag.tone-3 {
+    background: #f5f3ff;
+    color: #6b21a8;
+    border-color: #ddd6fe;
+}
+
+.car-tag.tone-4 {
+    background: #f0fdf4;
+    color: #166534;
+    border-color: #bbf7d0;
+}
+
+.car-tag.tone-5 {
+    background: #fff7ed;
+    color: #9a3412;
+    border-color: #fed7aa;
+}
+
+.car-tag.tone-6 {
+    background: #fef2f2;
+    color: #991b1b;
+    border-color: #fecaca;
+}
